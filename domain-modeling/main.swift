@@ -35,7 +35,12 @@ print(dad.toString())
 print(son.toString())
 
 let family = Family(members: [son, mom, dad])
-print("Household Income: \(family.householdIncome()))")
-print("New Child, Family Count \(family.haveChild().count)")
-let family2 = Family(members: [Person(firstName: "Under", lastName: "Age", age: 20, job: nil, spouse: nil)])
-print("Family of 1 with age < 21 add child: \(family2.haveChild().count)")
+print(family.description)
+
+
+
+
+//print("Household Income: \(family.householdIncome()))")
+//print("New Child, Family Count \(family.haveChild().count)")
+//let family2 = Family(members: [Person(firstName: "Under", lastName: "Age", age: 20, job: nil, spouse: nil)])
+//print("Family of 1 with age < 21 add child: \(family2.haveChild().count)")

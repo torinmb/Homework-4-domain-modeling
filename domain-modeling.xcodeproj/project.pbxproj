@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D6F73AF1BD44DF000886C92 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6F73AE1BD44DF000886C92 /* extension.swift */; settings = {ASSET_TAGS = (); }; };
 		9DB811C11BCDF84B0029A765 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB811C01BCDF84B0029A765 /* main.swift */; };
 		9DB811C81BCDFE210029A765 /* money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB811C71BCDFE210029A765 /* money.swift */; settings = {ASSET_TAGS = (); }; };
 		9DB811CA1BCDFFC30029A765 /* job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB811C91BCDFFC30029A765 /* job.swift */; settings = {ASSET_TAGS = (); }; };
@@ -27,6 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9D6F73AE1BD44DF000886C92 /* extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
 		9DB811BD1BCDF84B0029A765 /* domain-modeling */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "domain-modeling"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DB811C01BCDF84B0029A765 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9DB811C71BCDFE210029A765 /* money.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = money.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				9DB811C91BCDFFC30029A765 /* job.swift */,
 				9DB811CB1BCE02340029A765 /* person.swift */,
 				9DB811CD1BCF31E00029A765 /* family.swift */,
+				9D6F73AE1BD44DF000886C92 /* extension.swift */,
 			);
 			path = "domain-modeling";
 			sourceTree = "<group>";
@@ -133,6 +136,7 @@
 				9DB811CE1BCF31E00029A765 /* family.swift in Sources */,
 				9DB811CA1BCDFFC30029A765 /* job.swift in Sources */,
 				9DB811C81BCDFE210029A765 /* money.swift in Sources */,
+				9D6F73AF1BD44DF000886C92 /* extension.swift in Sources */,
 				9DB811CC1BCE02340029A765 /* person.swift in Sources */,
 				9DB811C11BCDF84B0029A765 /* main.swift in Sources */,
 			);
@@ -252,6 +256,7 @@
 				9DB811C61BCDF84B0029A765 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

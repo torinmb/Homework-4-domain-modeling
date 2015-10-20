@@ -9,12 +9,16 @@
 import Foundation
 
 
-class Person {
+class Person: CustomStringConvertible {
     var firstName: String
     var lastName: String
     var age: Int
     var job: Job?
     var spouse: Person?
+    
+    var description: String {
+        return "\(self.toString())"
+    }
     
     init(firstName: String, lastName: String, age: Int, job: Job?, spouse: Person?) {
         self.firstName = firstName

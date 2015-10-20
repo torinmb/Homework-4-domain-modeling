@@ -7,16 +7,22 @@
 
 import Foundation
 
+protocol Mathematics {
+    func add(other: Money) -> Double
+    func subtract(other: Money) -> Double
+}
 
-
-
-struct Money {
+struct Money: CustomStringConvertible, Mathematics {
     
     enum Currency {
         case USD
         case GBP
         case EUR
         case CAN
+    }
+        
+    var description: String {
+        return "\(self.currency)\(self.amount)"
     }
     
     var amount : Double
@@ -27,6 +33,8 @@ struct Money {
         self.currency = currency
         self.amount = amount
     }
+    
+    
     
     //takes a new currency and coverts the
     func convert(newCurrency: Currency) -> Double {
@@ -48,20 +56,30 @@ struct Money {
                 return self.amount * 2.5
             case .EUR:
                 return self.amount * 3
+            case .USD:
+                return self.amount * 2
             default:
                 break
             }
         case .EUR:
-            switch self.currency {
+            switch newCurrency {
             case .CAN:
                 return self.amount * (5.0/6.0)
+            case .USD:
+                return self.amount * (2.0/3.0)
+            case .GBP:
+                return self.amount * (1.0/3.0)
             default:
                 break
             }
         case .CAN:
-            switch self.currency {
+            switch newCurrency {
             case .USD:
-                return self.amount * 1.25
+                return self.amount * (4.0/5.0)
+            case .GBP:
+                return self.amount * (2.0/5.0)
+            case .EUR:
+                return self.amount * (6.0/5.0)
             default:
                 break
             }

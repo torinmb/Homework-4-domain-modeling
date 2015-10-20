@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Job {
+struct Job : CustomStringConvertible {
     var title: String
     var salary: Salary
     
@@ -20,6 +20,10 @@ struct Job {
     init(title:String, salery: Salary) {
         self.title = title
         self.salary = salery
+    }
+    
+    var description: String {
+        return "Title: \(self.title) Salary: \(self.salary)"
     }
     
     func calculateIncome(hours: Double) -> Double{

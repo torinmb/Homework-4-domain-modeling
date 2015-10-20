@@ -8,8 +8,12 @@
 
 import Foundation
 
-class Family {
+class Family: CustomStringConvertible {
     var members : [Person]
+    
+    var description: String {
+        return "\(self.members.description)"
+    }
     
     init(members: [Person]) {
         self.members = members
